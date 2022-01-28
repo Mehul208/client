@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./Chat";
 
-const socket = io.connect("https://slak-chat.herokuapp.com/");
+const socket = io("https://slak-chat.herokuapp.com/");
 
 function App() {
   const [username, setUsername] = useState("");
